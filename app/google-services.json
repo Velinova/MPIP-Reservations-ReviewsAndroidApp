@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "752107496107",
+    "firebase_url": "https://reservations-and-review.firebaseio.com",
+    "project_id": "reservations-and-review",
+    "storage_bucket": "reservations-and-review.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752107496107:android:e3c1988cbd282e55e90dee",
+        "android_client_info": {
+          "package_name": "com.example.reservationreview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752107496107-r0a7ktdt4pmu3rf0v2s3dav99m9f6his.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaHGzsEpbRn-OvJCtXFQh5-WZImbv4jsc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752107496107-r0a7ktdt4pmu3rf0v2s3dav99m9f6his.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

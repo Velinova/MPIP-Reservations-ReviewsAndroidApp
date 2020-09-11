@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_page"
+            android:icon="@drawable/ic_home"
+            android:title="Home Page" />
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/ic_contact"
+            android:title="Contact us" />
+        <item
+            android:id="@+id/restaurant_menu"
+            android:icon="@drawable/ic_restaurant_menu"
+            android:title="Food &amp; Drinks" />
+        <item
+            android:id="@+id/reservation"
+            android:icon="@drawable/ic_add"
+            android:title="Make Reservation" />
+        <item
+            android:id="@+id/review"
+            android:icon="@drawable/ic_review"
+            android:title="Add review" />
+    </group>
+    <item android:title="Sign out">
+        <menu>
+            <item
+                android:id="@+id/sign_out"
+                android:icon="@drawable/ic_sign_out"
+                android:title="Sign out" />
+            <item
+                android:id="@+id/close"
+                android:icon="@drawable/ic_baseline_close_24"
+                android:title="Close App" />
+        </menu>
+    </item>
+
+</menu>
