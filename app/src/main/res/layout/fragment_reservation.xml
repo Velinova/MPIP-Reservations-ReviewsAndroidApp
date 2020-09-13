@@ -3,9 +3,90 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/name_reservation_text"
+        android:layout_marginLeft="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reservation in fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="59dp"
+        android:text="Reservation for:" />
+
+    <EditText
+        android:id="@+id/name_reservation"
+
+        android:layout_marginLeft="20dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="83dp" />
+
+    <TextView
+        android:id="@+id/date_picker_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="144dp"
+        android:text="Pick date:" />
+
+    <DatePicker
+        android:id="@+id/reservation_date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="153dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginLeft="-30dp"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"/>
+
+    <TextView
+        android:id="@+id/time_picker_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="146dp"
+        android:text="Pick time:" />
+
+    <TimePicker
+        android:id="@+id/reservation_time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="153dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="-30dp"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:timePickerMode="spinner"
+        />
+
+    <TextView
+        android:id="@+id/persons_reservation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="326dp"
+        android:layout_marginLeft="20dp"
+        android:text="Number of guests:" />
+
+    <EditText
+        android:id="@+id/persons_reservation"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="348dp" />
+
+    <Button
+        android:id="@+id/make_reservation"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="415dp"
+        android:layout_marginLeft="20dp"
+        android:text="Make a reservation" />
 </RelativeLayout>
