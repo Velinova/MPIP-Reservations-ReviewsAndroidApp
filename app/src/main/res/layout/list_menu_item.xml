@@ -2,26 +2,37 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="80dp"
     android:padding="15dp"
     android:gravity="center_vertical"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:background="@color/colorAccent"
+    >
 
     <TextView
         android:id="@+id/menu_item_name_holder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dummy data"
-        android:textSize="20dp"
+        android:textSize="18dp"
+        android:textStyle="italic"
         />
 
     <TextView
-        android:id="@+id/menu_item_proce_holder"
-        android:layout_width="wrap_content"
+        android:id="@+id/menu_item_price_holder"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:gravity="right"
         android:text="50.00$"
         android:textSize="15dp"
-        android:layout_marginLeft="200dp"
-        android:textStyle="italic"
-        />
+        android:textStyle="bold"
+         />
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/menu_item_ingredients_holder"-->
+<!--        android:text="ingredients"-->
+<!--        />-->
 </LinearLayout>
