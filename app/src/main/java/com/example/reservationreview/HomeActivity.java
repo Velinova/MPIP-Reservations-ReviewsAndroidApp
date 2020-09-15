@@ -28,16 +28,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
-import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -155,7 +146,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
     private void handleGoogleSignInResult(GoogleSignInResult result){
         if(result.isSuccess()){
             GoogleSignInAccount account = result.getSignInAccount();
-            Toast.makeText(this, "You have been logged with this account "+account.getEmail() + " " + account.getDisplayName(), Toast.LENGTH_SHORT).show();
+
             name.setText(account.getDisplayName());
             email.setText(account.getEmail());
             Picasso.get().load(account.getPhotoUrl()).placeholder(R.mipmap.ic_launcher).into(profile_image);

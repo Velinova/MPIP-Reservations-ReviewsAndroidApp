@@ -16,6 +16,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
@@ -38,6 +39,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
     SignInButton signInButton;
+    Button closeApp;
     private GoogleApiClient googleApiClient;
     private static final int SIGN_IN = 1;
 
@@ -52,11 +54,20 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                 .enableAutoManage(this,  this).addApi(Auth.GOOGLE_SIGN_IN_API, gso).build();
 
         signInButton = findViewById(R.id.google_sign_in);
+        closeApp = findViewById(R.id.close_app_from_main_page);
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = Auth.GoogleSignInApi.getSignInIntent(googleApiClient);
                 startActivityForResult(intent, SIGN_IN);
+            }
+        });
+        closeApp.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+            @Override
+            public void onClick(View view) {
+                finishAndRemoveTask();
+
             }
         });
     }

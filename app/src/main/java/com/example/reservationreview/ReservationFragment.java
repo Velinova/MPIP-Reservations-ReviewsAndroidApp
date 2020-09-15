@@ -71,10 +71,10 @@ public class ReservationFragment extends Fragment {
                 numberGuests.setText("");
                 //Show notification in status bar
                 String notificationMessage = "You just made a reservation!";
-                Intent intent = new Intent(getActivity(), HomeActivity.class);
+                Intent intent = new Intent(getContext(), HomeActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                PendingIntent pendingIntent = PendingIntent.getActivity(getActivity(),0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
-                NotificationCompat.Builder builder = new NotificationCompat.Builder( getActivity())
+                PendingIntent pendingIntent = PendingIntent.getActivity(getContext(),0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+                NotificationCompat.Builder builder = new NotificationCompat.Builder( getContext())
                         .setSmallIcon(R.drawable.logo)
                         .setContentTitle("Reservations")
                         .setContentText(notificationMessage)
